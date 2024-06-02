@@ -8,7 +8,7 @@ mkShell {
   ];
   NIX_ENFORCE_PURITY = true;
   shellHook = ''
-    git submodule update --init
+    git submodule update --init --recursive
     ln -sf aima/search.py search.py
     ln -sf aima/utils.py utils.py
   '';
